@@ -1,0 +1,25 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%@ page import="java.util.List" %>
+<%@ page import="Controller.Article" %>
+
+<html>
+<head>
+    <title>Articles disponibles</title>
+</head>
+<body>
+
+<h2>Articles disponibles</h2>
+
+<form action="CreerCommandeServlet" method="post">
+    <% List<Article> articlesDisponibles = (List<Article>) request.getAttribute("articlesDisponibles");
+       for (Article article : articlesDisponibles) { %>
+        <input type="checkbox" nom="articles" value="<%= article.getId() %>" />
+        <%= article.getNom() %> - <%= article.getPrix() %> €<br/>
+    <% } %>
+
+    <input type="submit" value="Passer la commande" />
+</form>
+
+</body>
+</html>

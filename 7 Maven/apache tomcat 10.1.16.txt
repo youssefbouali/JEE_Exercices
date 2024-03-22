@@ -1,0 +1,5 @@
+Version apache tomcat 10.1.16
+
+http://localhost:8081/ServletArticles/AfficherArticlesServlet
+
+http://localhost:8081/ServletArticles/CreerCommandeServlet

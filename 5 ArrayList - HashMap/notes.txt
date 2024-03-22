@@ -1,0 +1,28 @@
+scriptlet : <%
+
+scripts : <%
+commentaires : <%--
+declaration : <% §
+<% =
+
+<%@ include
+<%@ taglib
+
+Le Bean : est un composant reutilisable 
+class public
+une constructeur par default
+...
+
+<jsp:include/>
+<jsp:getProperty/>
+<jsp:useBean/>
+<jsp:setProperty/>
+
+id
+class
+scope
+type
+
+<% coyote.setNom ( request.getPärameter("nom") ); %>
+
+hashmap : collection speciale : cle valeur
